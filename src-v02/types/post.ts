@@ -4,15 +4,6 @@
 
 import type { User } from './user';
 
-// 댓글 정보 (기본 타입 - 모든 속성 포함)
-export interface Reply {
-  _id: number;
-  user: User;
-  content: string;
-  createdAt: string;
-  updatedAt: string;
-}
-
 // 게시글 정보 (기본 타입 - 모든 속성 포함)
 export interface Post {
   _id: number;
@@ -39,10 +30,4 @@ export interface CreatePostRequest extends Pick<Post, 'type' | 'title' | 'conten
 export interface UpdatePostRequest extends Pick<Post, 'title' | 'content'> {
 
 }
-
-// 댓글 생성 요청
-export interface CreateReplyRequest extends Pick<Reply, 'content'> {
-  
-}
-
 
