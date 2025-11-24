@@ -1,8 +1,8 @@
 import axios, { AxiosError, type AxiosInstance } from 'axios';
 import { getUser, navigateLogin, setUser } from './user';
 
-// const API_SERVER = 'https://fesp-api.koyeb.app/market';
-const API_SERVER = 'http://localhost/market';
+const API_SERVER = 'https://fesp-api.koyeb.app/market';
+// const API_SERVER = 'http://localhost/market';
 // access token 재발급 URL
 const REFRESH_URL = '/auth/refresh';
 
