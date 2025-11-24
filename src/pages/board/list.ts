@@ -3,7 +3,7 @@ import type { Pagination } from "../../types/api";
 import type { Post } from "../../types/post";
 
 /** 페이지당 게시글 개수 */
-const LIMIT = '3';
+const LIMIT = '10';
 
 /**
  * 게시글 목록을 조회하고 렌더링하는 함수
